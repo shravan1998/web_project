@@ -1,37 +1,82 @@
 body{
     text-align: center;
-    background: #00ECB9;
-  font-family: sans-serif;
-  font-weight: 100;
+    background: #ff0077;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
-h1{
-  color: #396;
-  font-weight: 100;
-  font-size: 40px;
+.countdown{                                                        
+  color: #ffffff;
+  font-family: "Verdana";
+  font-size: 60px;
   margin: 40px 0px 20px;
 }
- #clockdiv{
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
+.SOSC{
+  color: #191919;
+  font-size: 25px;
+
+}
+
+.timeboxes{                                                 /*for the size and colour of the colons*/
+    color: #ffffff;
+    font-size: 120px;
+}
+input{                                                      /*for the iput boxes*/
+    background: #ff0077;
+    color: #ffffff;
+    font-size: 110px;
+    border-color: #ef006f;
+    font-family: "Verdana";
+    font-weight: "bold";
+    border: none;
+    height:150px;
+    width:150px; 
     text-align: center;
-    font-size: 30px;
 }
-#clockdiv > div{
-    padding: 10px;
-    border-radius: 3px;
-    background: #00BF96;
-    display: inline-block;
+
+.start{                                                     /*Start button effects*/
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #008e05;
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 3px #999;
 }
-#clockdiv div > span{
-    padding: 15px;
-    border-radius: 3px;
-    background: #00816A;
-    display: inline-block;
+
+.start:hover {background-color: #dddbdb}
+
+.start:active {
+  background-color: #aaaaaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
-smalltext{
-    padding-top: 5px;
-    font-size: 16px;
+
+
+.stop{                                                       /*Stop button effects*/
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ff0000;
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 3px #999;
+}
+
+.stop:hover {background-color: #dddbdb}
+
+.stop:active {
+  background-color: #aaaaaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
