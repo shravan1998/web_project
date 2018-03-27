@@ -26,13 +26,26 @@ function start()
 		s = Math.floor((difference-h*60*60-m*60));						  /*To Find Seconds Remaining*/
 
 		document.getElementById("hour").value = h;
+		document.getElementById("hour").disabled = true;
 		document.getElementById("minute").value = m;
+		document.getElementById("minute").disabled = true;
 		document.getElementById("second").value = s;	
+		document.getElementById("second").disabled = true;
+		if(difference == 0){
+			document.getElementById("hour").disabled = false;
+			document.getElementById("minute").disabled = false;
+			document.getElementById("second").disabled = false;
+		}
 		if(difference < 0){
 		document.getElementById("hour").value = 00;
+		document.getElementById("hour").disabled = false;		
 		document.getElementById("minute").value = 00;
+		document.getElementById("minute").disabled = false;
 		document.getElementById("second").value = 00;
+		document.getElementById("second").disabled = false;
 		}
+		
+		
 	},1000);
 	
 }
@@ -40,8 +53,11 @@ function start()
 function stop()																/*Function to stop countdown and set input boxes to 0:0:0*/
 {
 		document.getElementById("hour").value = 00;
+		document.getElementById("hour").disabled = false;
 		document.getElementById("minute").value = 00;
+		document.getElementById("minute").disabled = false;
 		document.getElementById("second").value = 00;	
+		document.getElementById("second").disabled = false;
 }
 
 function acceptTime()														/*Function To Receive the countdown time remaining from input boxes*/
