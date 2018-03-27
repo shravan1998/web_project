@@ -21,21 +21,20 @@ function start()
 		}
 		if(difference!=0)
 		difference--;
-		
 		h = Math.floor(difference/(60*60));                  			  /*To Round Hour to lowest integer value*/
 		m = Math.floor((difference/60-h*60));							  /*To Round Minute to lowest integer value*/
 		s = Math.floor((difference-h*60*60-m*60));						  /*To Find Seconds Remaining*/
 
 		document.getElementById("hour").value = h;
 		document.getElementById("minute").value = m;
-		document.getElementById("second").value = s;
-		if(difference == 0)
-		alert("time up!!");
-		if(difference < 0)
+		document.getElementById("second").value = s;	
+		if(difference < 0){
 		document.getElementById("hour").value = 00;
 		document.getElementById("minute").value = 00;
 		document.getElementById("second").value = 00;
+		}
 	},1000);
+	
 }
 
 function stop()																/*Function to stop countdown and set input boxes to 0:0:0*/
