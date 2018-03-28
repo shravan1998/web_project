@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background: #ff0077;
+    background: #FFA500;
     font-family: sans-serif;
     font-weight: 100;
 }
@@ -22,7 +22,7 @@ body{
     font-size: 80px;
 }
 input{                                                      /*for the iput boxes*/
-    background: #ff0077;
+    background: #FFA500;
     color: #ffffff;
     font-size: 70px;
     border-color: #ef006f;
