@@ -2,7 +2,7 @@ var difference;
 var h;
 var m;
 var s;
-
+var timer;
 /*function update()
 {
 setInterval(function(){now=now+1;},1000);
@@ -10,7 +10,7 @@ setInterval(function(){now=now+1;},1000);
 
 function start()
 {	
-	var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
+	timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 	{
 		acceptTime();
 		document.getElementById("SOSC").innerHTML = "Counting down...";
@@ -52,12 +52,7 @@ function start()
 
 function stop()																/*Function to stop countdown and set input boxes to 0:0:0*/
 {
-		document.getElementById("hour").value = 00;
-		document.getElementById("hour").disabled = false;
-		document.getElementById("minute").value = 00;
-		document.getElementById("minute").disabled = false;
-		document.getElementById("second").value = 00;	
-		document.getElementById("second").disabled = false;
+		clearInterval(timer);
 }
 
 function acceptTime()														/*Function To Receive the countdown time remaining from input boxes*/
