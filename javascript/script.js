@@ -12,7 +12,7 @@ function start()
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
 				
-				document.getElementById("SOSC").innerHTML ="Counting down...";
+				
 				
 				if(difference>0)
 				{
@@ -21,7 +21,7 @@ function start()
 				h = Math.floor(difference/(60*60));                  			  /*To Round Hour to lowest integer value*/
 				m = Math.floor((difference/60-h*60));							  /*To Round Minute to lowest integer value*/
 				s = Math.floor((difference-h*60*60-m*60));						  /*To Find Seconds Remaining*/
-
+				document.getElementById("SOSC").innerHTML ="Counting down...";
 				document.getElementById("hour").value = h;
 				document.getElementById("hour").disabled = true;
 				document.getElementById("minute").value = m;
@@ -54,9 +54,10 @@ function start()
 			},1000);
 		}
 	else if (document.getElementById("start").innerHTML=="PAUSE") 
-	{
+	{	
 		document.getElementById("start").innerHTML="START"
 		difference=0;
+		document.getElementById("SOSC").innerHTML ="PAUSED";
 		
 
 	}
