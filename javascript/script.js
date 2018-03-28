@@ -56,7 +56,7 @@ function stop()																/*Function to stop countdown and set input boxes 
 }
 
 function acceptTime()														/*Function To Receive the countdown time remaining from input boxes*/
-{	h=(document.getElementById("hour").value);
+{	
 	difference = Math.round((document.getElementById("hour").value))*60*60 + Math.round((document.getElementById("minute").value))*60 + Math.round((document.getElementById("second").value));
 
 }
