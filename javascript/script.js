@@ -80,6 +80,16 @@ function reset()																/*Function to stop countdown and set input boxes
 
 function acceptTime()														/*Function To Receive the countdown time remaining from input boxes*/
 {	h=(document.getElementById("hour").value);
+	m=document.getElementById("minute").value;
+	s=document.getElementById("second").value;
+	if(s >= 60) {
+		document.getElementById("second").value = 00;
+		alert("Invalid");
+		}
+		if(m >= 60) {
+		document.getElementById("minute").value = 00;
+		alert("Invalid");
+		}
 	difference = Math.round((document.getElementById("hour").value))*60*60 + Math.round((document.getElementById("minute").value))*60 + Math.round((document.getElementById("second").value));
 
 }
