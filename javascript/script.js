@@ -2,12 +2,15 @@ var difference;
 var h;
 var m;
 var s;
-
+var img = document.createElement("IMG");
+	img.setAttribute("src","../images/pause.png");
+	document.button.appendChild;
+	
 
 function start()
 {	if(document.getElementById("start").innerHTML=="START")
 		{
-			document.getElementById("start").innerHTML="PAUSE";
+			document.getElementById("start").innerHTML=img;
 			difference=1;
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
@@ -53,7 +56,7 @@ function start()
 				
 			},1000);
 		}
-	else if (document.getElementById("start").innerHTML=="PAUSE") 
+	else if (document.getElementById("start").innerHTML==img) 
 	{	
 		document.getElementById("start").innerHTML="START";
 		difference=0;

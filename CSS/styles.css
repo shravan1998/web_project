@@ -36,7 +36,7 @@ input{                                                      /*for the iput boxes
 
 .start{                                                     /*Start button effects*/
   display: inline-block;
-  padding: 10px 20px;
+  padding: 28px 13px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -47,21 +47,29 @@ input{                                                      /*for the iput boxes
   border: none;
   border-radius: 35px;
   box-shadow: 0 3px #999;
-}
+  background-image: url(../images/start.png);
+  
+  
+ 
+}  
 
-.start:hover {background-color: #dddbdb}
+.start:hover {
+	background-color: #dddbdb;
+	
+}
 
 .start:active {
   background-color: #aaaaaa;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  
 }
 
 
 .reset{                                                       /*Stop button effects*/
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 24px;
+  padding: 28px 13px;
+  font-size :24px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -71,6 +79,8 @@ input{                                                      /*for the iput boxes
   border: none;
   border-radius: 35px;
   box-shadow: 0 3px #999;
+   background-image: url(../images/stop.png);
+ 
 }
 
 .reset:hover {background-color: #dddbdb}
