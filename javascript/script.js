@@ -55,7 +55,7 @@ function start()
 		}
 	else if (document.getElementById("start").innerHTML=="PAUSE") 
 	{	
-		document.getElementById("start").innerHTML="START"
+		document.getElementById("start").innerHTML="START";
 		difference=0;
 		document.getElementById("SOSC").innerHTML ="PAUSED";
 		
@@ -82,14 +82,17 @@ function acceptTime()														/*Function To Receive the countdown time rema
 {	h=(document.getElementById("hour").value);
 	m=document.getElementById("minute").value;
 	s=document.getElementById("second").value;
-	if(s >= 60) {
+	if(s >= 60 && m >= 60) {
 		document.getElementById("second").value = 00;
-		alert("Invalid");
-		}
-		if(m >= 60) {
 		document.getElementById("minute").value = 00;
 		alert("Invalid");
+		document.getElementById("start").innerHTML="START";
+		difference=0;
+		document.getElementById("hour").disabled = false;
+		document.getElementById("minute").disabled = false;
+		document.getElementById("second").disabled = false;
 		}
+		
 	difference = Math.round((document.getElementById("hour").value))*60*60 + Math.round((document.getElementById("minute").value))*60 + Math.round((document.getElementById("second").value));
 
 }
