@@ -47,8 +47,8 @@ input{                                                      /*for the iput boxes
   border: none;
   border-radius: 35px;
   box-shadow: 0 3px #999;
-  background-image: url(../images/start.png);
-  
+ 
+   background-image: url(../images/start.png);
   
  
 }  
@@ -56,13 +56,15 @@ input{                                                      /*for the iput boxes
 .start:hover {
 	background-color: #dddbdb;
 	
+	
 }
+
 
 .start:active {
   background-color: #aaaaaa;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-  
+   background-image: url(../images/pause.png);
 }
 
 

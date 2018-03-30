@@ -2,21 +2,18 @@ var difference;
 var h;
 var m;
 var s;
-var img = document.createElement("IMG");
-	img.setAttribute("src","../images/pause.png");
-	document.button.appendChild;
-	
 
 function start()
-{	if(document.getElementById("start").innerHTML=="START")
+{
+	if(document.getElementById("start").src == "./images/start.png")
 		{
-			document.getElementById("start").innerHTML=img;
+			document.getElementById("start").src = "./images/pause.png";
 			difference=1;
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
 				
 				
-				
+		
 				if(difference>0)
 				{
 				acceptTime();
@@ -31,6 +28,7 @@ function start()
 				document.getElementById("minute").disabled = true;
 				document.getElementById("second").value = s;	
 				document.getElementById("second").disabled = true;
+				
 				}
 
 				if(difference==0)
@@ -41,7 +39,7 @@ function start()
 					document.getElementById("minute").disabled = false;
 					document.getElementById("second").disabled = false;
 
-					document.getElementById("start").innerHTML="START"
+					document.getElementById("start").src = "./images/start.png";
 				}
 				if(difference<0)
 				{
@@ -56,9 +54,9 @@ function start()
 				
 			},1000);
 		}
-	else if (document.getElementById("start").innerHTML==img) 
+	else if (document.getElementById("start").src == "../images/pause.png") 
 	{	
-		document.getElementById("start").innerHTML="START";
+		document.getElementById("start").src = "../images/start.png";
 		difference=0;
 		document.getElementById("SOSC").innerHTML ="PAUSED";
 		
