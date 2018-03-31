@@ -36,7 +36,7 @@ input{                                                      /*for the iput boxes
 
 .start{                                                     /*Start button effects*/
   display: inline-block;
-  padding: 28px 13px;
+  padding: 24px 13px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
@@ -47,8 +47,7 @@ input{                                                      /*for the iput boxes
   border: none;
   border-radius: 35px;
   box-shadow: 0 3px #999;
- 
-   background-image: url(../images/start.png);
+ background-image: url(../images/start.png);
   
  
 }  
@@ -57,14 +56,23 @@ input{                                                      /*for the iput boxes
 	background-color: #dddbdb;
 	
 	
+	
 }
+
+
 
 
 .start:active {
   background-color: #aaaaaa;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-   background-image: url(../images/pause.png);
+    background-image: url(../images/pause.png);
+
+}
+.start:focus{
+	  background-image: url(../images/pause.png);
+	  
+	
 }
 
 
