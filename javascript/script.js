@@ -8,7 +8,7 @@ function start()
 	if(document.getElementById("start").innerHTML == "START")
 		{
 			document.getElementById("start").innerHTML = "PAUSE";
-			document.getElementById("start").src = "images/pause.png";
+			
 			difference=1;
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
@@ -58,8 +58,12 @@ function start()
 	else if (document.getElementById("start").innerHTML == "PAUSE") 
 	{	
 		document.getElementById("start").innerHTML = "START";
+		
 		difference=0;
 		document.getElementById("SOSC").innerHTML ="PAUSED";
+		document.getElementById("hour").readOnly = true;
+		document.getElementById("minute").readOnly = true;
+		document.getElementById("second").readOnly = true;
 		
 
 	}
@@ -73,9 +77,9 @@ function reset()																/*Function to stop countdown and set input boxes
 		document.getElementById("minute").value = 00;	
 		document.getElementById("second").value = 00;
 
-		document.getElementById("hour").disabled = false;
-		document.getElementById("minute").disabled = false;
-		document.getElementById("second").disabled = false;
+		document.getElementById("hour").readOnly = false;
+		document.getElementById("minute").readOnly = false;
+		document.getElementById("second").readOnly = false;
 
 		
 }
