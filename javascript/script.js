@@ -40,10 +40,23 @@ function start()
 					document.getElementById("hour").disabled = false;	
 					document.getElementById("minute").disabled = false;
 					document.getElementById("second").disabled = false;
-
-					document.getElementById("start").innerHTML="START"
+					document.getElementById("action").src="./images/start.png";
+					document.getElementById("start").innerHTML="START";
+					document.getElementById("SOSC").innerHTML ="By SOSC";
 				}
-				
+				if(difference<0)
+				{
+					document.getElementById("action").src="./images/start.png";
+					document.getElementById("SOSC").innerHTML ="By SOSC";
+					difference=0;
+					document.getElementById("hour").value = "00";	
+					document.getElementById("minute").value = "00";	
+					document.getElementById("second").value = "00";
+
+					document.getElementById("hour").disabled = false;
+					document.getElementById("minute").disabled = false;
+					document.getElementById("second").disabled = false;
+				}
 				
 			},1000);
 		}
@@ -53,9 +66,9 @@ function start()
 		document.getElementById("start").innerHTML="START"
 		document.getElementById("action").src="./images/start.png";
 		difference=0;
-		document.getElementById("hour").disabled = false;
-		document.getElementById("minute").disabled = false;
-		document.getElementById("second").disabled = false;
+		document.getElementById("hour").readOnly = true;
+		document.getElementById("minute").readOnly = true;
+		document.getElementById("second").readOnly = true;
 
 	}
 	
@@ -79,6 +92,37 @@ function reset()																/*Function to stop countdown and set input boxes
 
 function acceptTime()														/*Function To Receive the countdown time remaining from input boxes*/
 {	h=(document.getElementById("hour").value);
+	m=document.getElementById("minute").value;
+	s=document.getElementById("second").value;
+	
+	if(m >=60)
+	{
+		document.getElementById("action").src="./images/start.png";
+		document.getElementById("SOSC").innerHTML ="By SOSC";
+		difference=0;
+		document.getElementById("hour").value = "00";	
+		document.getElementById("minute").value = "00";	
+		document.getElementById("second").value = "00";
+
+		document.getElementById("hour").disabled = false;
+		document.getElementById("minute").disabled = false;
+		document.getElementById("second").disabled = false;
+		alert("Invalid");
+	}
+	if(s >=60)
+	{
+		document.getElementById("action").src="./images/start.png";
+		document.getElementById("SOSC").innerHTML ="By SOSC";
+		difference=0;
+		document.getElementById("hour").value = "00";	
+		document.getElementById("minute").value = "00";	
+		document.getElementById("second").value = "00";
+
+		document.getElementById("hour").disabled = false;
+		document.getElementById("minute").disabled = false;
+		document.getElementById("second").disabled = false;
+		alert("Invalid");
+	}
 	difference = Math.round((document.getElementById("hour").value))*60*60 + Math.round((document.getElementById("minute").value))*60 + Math.round((document.getElementById("second").value));
 
 }
