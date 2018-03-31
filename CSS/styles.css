@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background: #FFA500;
+    background: #0bde97;
     font-family: sans-serif;
     font-weight: 100;
 }
@@ -10,6 +10,7 @@ body{
   font-family: "Verdana";
   font-size: 60px;
   margin: 40px 0px 20px;
+  
 }
 .SOSC{
   color: #191919;
@@ -22,7 +23,7 @@ body{
     font-size: 80px;
 }
 input{                                                      /*for the iput boxes*/
-    background: #FFA500;
+    background: #0bde97;
     color: #ffffff;
     font-size: 70px;
     border-color: #ef006f;
@@ -35,63 +36,34 @@ input{                                                      /*for the iput boxes
 }
 
 .start{                                                     /*Start button effects*/
-  display: inline-block;
-  padding: 24px 13px;
-  font-size: 24px;
+  padding: 15px 15px;
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
   outline: none;
   color: #008e05;
   background-color: #fcfcfc;
   border: none;
-  border-radius: 35px;
+  border-radius: 50%;
   box-shadow: 0 3px #999;
- background-image: url(../images/start.png);
-
-  
- 
-}  
-
-.start:hover {
-	background-color: #dddbdb;
-	
-	
-	
 }
 
-
-
+.start:hover {background-color: #dddbdb}
 
 .start:active {
   background-color: #aaaaaa;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-    background-image: url(../images/pause.png);
-
-}
-.start:focus{
-	  background-image: url(../images/pause.png);
-	  
-	
 }
 
 
 .reset{                                                       /*Stop button effects*/
-  display: inline-block;
-  padding: 28px 13px;
-  font-size :24px;
+  padding: 15px 15px;
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
   outline: none;
   color: #ff0000;
   background-color: #fcfcfc;
   border: none;
-  border-radius: 35px;
+  border-radius: 50%;
   box-shadow: 0 3px #999;
-   background-image: url(../images/stop.png);
- 
 }
 
 .reset:hover {background-color: #dddbdb}
@@ -102,3 +74,6 @@ input{                                                      /*for the iput boxes
   transform: translateY(4px);
 }
 
+.inv{
+  font-size: 0px;
+}
