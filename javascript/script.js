@@ -83,9 +83,9 @@ function reset()																/*Function to stop countdown and set input boxes
 		document.getElementById("minute").value = "00";	
 		document.getElementById("second").value = "00";
 
-		document.getElementById("hour").disabled = false;
-		document.getElementById("minute").disabled = false;
-		document.getElementById("second").disabled = false;
+		document.getElementById("hour").readOnly = false;
+		document.getElementById("minute").readOnly = false;
+		document.getElementById("second").readOnly = false;
 
 		
 }
