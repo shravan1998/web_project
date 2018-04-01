@@ -66,7 +66,7 @@ input{                                                      /*for the iput boxes
   box-shadow: 0 2px 1px #999;
 }
 
-.reset:hover {background-color: #ffffff }
+.reset:hover {background-color: #ffffff; }
 
 .reset:active {
   background-color: #ffffff;
