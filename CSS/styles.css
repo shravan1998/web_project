@@ -43,7 +43,7 @@ input{                                                      /*for the iput boxes
   background-color: #fcfcfc;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 2px #999;
+  box-shadow: 0 1px #999;
 }
 
 .start:hover {background-color: #dddbdb}
@@ -63,7 +63,7 @@ input{                                                      /*for the iput boxes
   background-color: #fcfcfc;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 2px #999;
+  box-shadow: 0 1px #999;
 }
 
 .reset:hover {background-color: #dddbdb}
