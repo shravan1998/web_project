@@ -66,10 +66,10 @@ input{                                                      /*for the iput boxes
   box-shadow: 0 2px 1px #999;
 }
 
-.reset:hover {background-color: #ff0000}
+.reset:hover {background-color: #ffffff}
 
 .reset:active {
-  background-color: #ff0000;
+  background-color: #ffffff;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
