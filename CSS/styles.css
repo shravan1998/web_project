@@ -49,7 +49,7 @@ input{                                                      /*for the iput boxes
 .start:hover {background-color: #dddbdb}
 
 .start:active {
-  background-color: #aaaaaa;
+  background-color: #008e05;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -69,7 +69,7 @@ input{                                                      /*for the iput boxes
 .reset:hover {background-color: #dddbdb}
 
 .reset:active {
-  background-color: #aaaaaa;
+  background-color: #008e05;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
