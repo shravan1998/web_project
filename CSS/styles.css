@@ -7,15 +7,15 @@ body{
 
 .countdown{                                                        
   color: #ffffff;
-  font-family: "Verdana";
+  font-family: "Ubuntu";
   font-size: 60px;
   margin: 40px 0px 20px;
   
 }
 .SOSC{
-  color: #191919;
+  color: #ffffff;
   font-size: 25px;
-
+  font-family: "Ubuntu";
 }
 
 .timeboxes{                                                 /*for the size and colour of the colons*/
